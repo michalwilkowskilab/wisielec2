@@ -16,6 +16,8 @@ function wypisz_haslo(){
 
 window.onload = start;
 
+var litery = new Array(35)
+
 function start(){
     var tresc_diva = "";
 
