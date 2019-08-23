@@ -18,9 +18,12 @@ window.onload = start;
 
 function start(){
     var tresc_diva = "";
-    console.log("tresc_diva:", tresc_diva);
 
-    document.getElementById("alfabet").innerHTML = "jupikajej mada faka"
+    for(i=0; i<34; i++){
+        
+    }
+
+    document.getElementById("alfabet").innerHTML = tresc_diva;
 
 
     wypisz_haslo();
