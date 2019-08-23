@@ -11,8 +11,17 @@ for(i=0; i<dlugosc; i++){
 }
 
 function wypisz_haslo(){
-
     document.getElementById("plansza").innerHTML = haslo1;
 }
 
-window.onload = wypisz_haslo;
+window.onload = start;
+
+function start(){
+    var tresc_diva = "";
+    console.log("tresc_diva:", tresc_diva);
+
+    document.getElementById("alfabet").innerHTML = "jupikajej mada faka"
+
+
+    wypisz_haslo();
+}
