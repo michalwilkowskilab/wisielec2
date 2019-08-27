@@ -19,9 +19,10 @@ window.onload = start;
 var litery = new Array(35);
 
 litery[0] = "A";
-litery[1] = "B";
-litery[2] = "C";
-litery[3] = "Ć";
+litery[1] = "Ą"
+litery[2] = "B";
+litery[3] = "C";
+litery[4] = "Ć";
 litery[5] = "D";
 litery[6] = "E";
 litery[7] = "Ę";
@@ -53,15 +54,11 @@ litery[32] = "Z";
 litery[33] = "Ż";
 litery[34] = "Ź";
 
-
-
-
-
 function start(){
     var tresc_diva = "";
 
     for(i=0; i<35; i++){
-        tresc_diva = tresc_diva + '<div class="litera">A</div>';
+        tresc_diva = tresc_diva + '<div class="litera">'+ litery[i] +'</div>';
         if((i+1)% 7==0)tresc_diva = tresc_diva + '<div style="clear:both;"></div>'
     }
 
