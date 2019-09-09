@@ -2,7 +2,7 @@ var haslo = "Bez pracy nie ma kołaczy";
 haslo = haslo.toUpperCase();
 
 var dlugosc = haslo.length;
-
+var ile_skuch = 0;
 var haslo1 = "";
 
 for(i=0; i<dlugosc; i++){
@@ -100,6 +100,18 @@ function sprawdz(nr){
         document.getElementById(element).style.color = "#C00000";
         document.getElementById(element).style.border = "3px solid #C00000";
         document.getElementById(element).style.cursor = "default";
+        document.getElementById(element).setAttribute("onclick", ";")
+
+        //skucha
+        ile_skuch++
+        var obraz = "img/s" + ile_skuch + ".jpg";
+        document.getElementById("szubienica").innerHTML = '<img src="'+ obraz +'" alt=""/>'
+    }
+
+    //wygrana
+    if(haslo == haslo1){
+        document.getElementById("alfabet").innerHTML = "Tak jest! Podano prawidłowe hasło:"+ haslo +
+        '<br/><br/><span class="reset" onclick="location.reload()">JESCZE RAZ?</span>';
     }
    
 }
